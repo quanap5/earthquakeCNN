@@ -29,9 +29,9 @@ python twitter_stream_download.py -q [namefile] -d data
 ### Pre-process Json --> csv format, some pre processing
 - go to folder ./pre_time_eventDetection
 - convert Json to csv with consideration attribute [ID , text, creat_at....]
-	-python earthquake2csv.py 
-	Some preprocessing
-	-python preprocessingSCV.py
+	- python earthquake2csv.py 
+- Some preprocessing
+	- python preprocessingSCV.py
 - copy output.csv file to folder ./twitter_DataPre/earthquake_data for Classification using CNN
 - Note: We need consider 3 column [ID] [Text] [] --> rename to [item_id] [item] [label]  like Training dataset and Change name into newinput.csv (Label of input Tweet we collected here now empty)	
 
@@ -43,15 +43,15 @@ python twitter_stream_download.py -q [namefile] -d data
 <ul>
 <li>python helpers/preprocess.py twitter_DataPre/sample.csv
 <li>python helpers/split_data.py twitter_DataPre/sample_prccd.csv
-<ul>
+</ul>
 - Copy all output file into folder .twitter_DataPre/earthquake_data and change name file coressponding
 	  
 ### Training a CNN model and Predict Informative tweet
 - Folder embeddings/ includes word vector file from Google: (8Gb) and Glove focus on Twitter context (just 2Gb) I use this file
 - Run training:
-<ul>
+</ul>
 <li>bash run_cnn.sh get the performance of CNN based model detailed on log file and Result predict (Informative / Not informative) on INPUTlabelPred.scv (see in original folder)
-<ul>
+</ul>
 - Edit file on Step 2 based on out put of classification to move to Time event detection
 
 ### Time event detection
@@ -59,7 +59,7 @@ python twitter_stream_download.py -q [namefile] -d data
 - Run script:
 <ul>
 <li>-python accumulateTime.py
-<ul>
+</ul>
 -Out put will be use to run Time event detection (Now this algorithm I code on Matlab--> you should run on matlab with input file.csv easily)
 
 
