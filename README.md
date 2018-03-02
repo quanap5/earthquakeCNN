@@ -49,7 +49,6 @@ These below instructions will give you step by step command to run project
 - Folder embeddings/ includes word vector file from Google: (8Gb) and Glove focus on Twitter context (just 2Gb) I use this file
 - Run training:
 	- bash run_cnn.sh get the performance of CNN based model detailed on log file and Result predict (Informative / Not informative) on INPUTlabelPred.scv (see in original folder)
-</ul>
 - Edit file on Step 2 based on out put of classification to move to Time event detection
 
 ### Time event detection
