@@ -21,9 +21,7 @@ These below instructions will give you step by step command to run project
 - creat a Twitter account and get Token as well as Sercet key to using Streaming API
 - create a folder /data/ in folder ./data_Collection
 - streaming run with
-'''sh
-python twitter_stream_download.py -q [namefile] -d data
-'''
+	- python twitter_stream_download.py -q [namefile] -d data
 - Copy json file to folder ./pre_time_eventDetection for Preprocessing step
 	
 ### Pre-process Json --> csv format, some pre processing
@@ -40,26 +38,21 @@ python twitter_stream_download.py -q [namefile] -d data
 - Sameple.csv is earthquake related dataset we use for training and test CNN model (about 3464 tweets)
 - Go outmost folder contain code
 - Preprocess dataset
-<ul>
-<li>python helpers/preprocess.py twitter_DataPre/sample.csv
-<li>python helpers/split_data.py twitter_DataPre/sample_prccd.csv
-</ul>
+	- python helpers/preprocess.py twitter_DataPre/sample.csv
+	- python helpers/split_data.py twitter_DataPre/sample_prccd.csv
 - Copy all output file into folder .twitter_DataPre/earthquake_data and change name file coressponding
 	  
 ### Training a CNN model and Predict Informative tweet
 - Folder embeddings/ includes word vector file from Google: (8Gb) and Glove focus on Twitter context (just 2Gb) I use this file
 - Run training:
-</ul>
-<li>bash run_cnn.sh get the performance of CNN based model detailed on log file and Result predict (Informative / Not informative) on INPUTlabelPred.scv (see in original folder)
+	- bash run_cnn.sh get the performance of CNN based model detailed on log file and Result predict (Informative / Not informative) on INPUTlabelPred.scv (see in original folder)
 </ul>
 - Edit file on Step 2 based on out put of classification to move to Time event detection
 
 ### Time event detection
 - Go to folder ./pre_time_eventDetection agian to accumulate occurence of keyword related tweet
 - Run script:
-<ul>
-<li>-python accumulateTime.py
-</ul>
--Out put will be use to run Time event detection (Now this algorithm I code on Matlab--> you should run on matlab with input file.csv easily)
+	- python accumulateTime.py
+- Out put will be use to run Time event detection (Now this algorithm I code on Matlab--> you should run on matlab with input file.csv easily)
 
 
