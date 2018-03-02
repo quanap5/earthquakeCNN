@@ -1,8 +1,4 @@
-#===================================================================================
-#This source code for Earthquake detection 
-#Editor: Nguyen Van Quan
-#Date edit: 2016 Dec 22
-#====================================================================================
+# earthquake detection using social media
 
 0. Requirementes:
 	Ubuntu
