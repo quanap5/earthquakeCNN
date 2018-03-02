@@ -1,6 +1,9 @@
 # Earthquake detection using social media [here](http://sclab.cafe24.com/publications/581.pdf)
 
-Twitter has become a potential data source to explore useful information mentioned  by  users. For instance, Twittertweets  related to an earthquake  will  be  utilized  to  detecttemporal  occurrence  as  wellas  location  information  by  ahumanitarian organization. Therefore, we proposed a Convolution Neural Network (CNN) based method to determineinformative tweet and the real-time event detection algorithm todetect  the  timely  occurrence  of  the  given  event.  In  this  study,CNN model trained from the tweets related to the earthquake inthe past labeled by crowdsourcing plays a role as the classifierto predict an earthquake keyword related tweet is informativeor  not.  Then  these  informative  tweets  are  considered  as  inputstreaming data of time detection phase. Our system with the aidof  CNN  module  can  detect  the  earthquake  after it happens in the level of tolerance and ensure earlier than an announcementfrom official disaster website of government. 
+Twitter has become a potential data source to explore useful information mentioned  by  users. For instance, Twittertweets  related to an earthquake  will  be  utilized  to  detecttemporal  occurrence  as  wellas  location  information by a humanitarian organization. Therefore, we proposed a Convolution Neural Network (CNN) based method to determineinformative tweet and the real-time event detection algorithm to detect the timely occurrence of  the  given  event.  In  this  study, CNN model trained from the tweets related to the earthquake inthe past labeled by crowdsourcing plays a role as the classifierto predict an earthquake keyword related tweet is informativeor  not.  Then  these  informative  tweets  are  considered  as  input streaming data of time detection phase. Our system with the aid of  CNN  module  can  detect  the  earthquake  after it happens in the level of tolerance and ensure earlier than an announcementfrom official disaster website of government.
+
+-Architecture
+<img src="https://imgur.com/a/yNt8T">
 
 ----
 ## Getting Started
@@ -53,6 +56,6 @@ These below instructions will give you step by step command to run project
 - Go to folder ./pre_time_eventDetection agian to accumulate occurence of keyword related tweet
 - Run script:
 	- python accumulateTime.py
-- Out put will be use to run Time event detection (Now this algorithm I code on Matlab--> you should run on matlab with input file.csv easily)
+- Out put will be use to run Time event detection (Now this algorithm I code on Matlab--> you should run on matlab with input file.csv)
 
 
