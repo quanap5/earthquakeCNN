@@ -2,7 +2,8 @@
 
 Twitter has become a potential data source to explore useful information mentioned  by  users. For instance, Twittertweets  related to an earthquake  will  be  utilized  to  detecttemporal  occurrence  as  wellas  location  information by a humanitarian organization. Therefore, we proposed a Convolution Neural Network (CNN) based method to determineinformative tweet and the real-time event detection algorithm to detect the timely occurrence of  the  given  event.  In  this  study, CNN model trained from the tweets related to the earthquake inthe past labeled by crowdsourcing plays a role as the classifierto predict an earthquake keyword related tweet is informativeor  not.  Then  these  informative  tweets  are  considered  as  input streaming data of time detection phase. Our system with the aid of  CNN  module  can  detect  the  earthquake  after it happens in the level of tolerance and ensure earlier than an announcementfrom official disaster website of government.
 
--Architecture
+- Architecture:
+
 <img src="http://ieeexplore.ieee.org/mediastore/IEEE/content/media/7964295/7966694/7966735/7966735-fig-1-large.gif">
 
 ----
